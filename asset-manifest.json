@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Movie-Book/static/css/main.cd097626.css",
+    "main.js": "/Movie-Book/static/js/main.8d9f0505.js",
+    "index.html": "/Movie-Book/index.html",
+    "main.cd097626.css.map": "/Movie-Book/static/css/main.cd097626.css.map",
+    "main.8d9f0505.js.map": "/Movie-Book/static/js/main.8d9f0505.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd097626.css",
+    "static/js/main.8d9f0505.js"
+  ]
+}
