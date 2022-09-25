@@ -5,10 +5,12 @@ import MovieList from "./Components/MovieList";
 import AddMovie from "./Components/AddMovie";
 import Footer from "./Components/Footer";
 
+
 function App() {
+
   const [movies, setMovies] = useState([
     {
-      id: 1,
+      id: Math.floor(Math.random() * 100),
       title: "2001",
       posterUrl: "../Assets/2001.jpeg",
       description:
@@ -16,7 +18,7 @@ function App() {
       rating: 5,
     },
     {
-      id: 2,
+      id: Math.floor(Math.random() * 100),
       title: "Avengers : Infinity Wars",
       posterUrl: "../Assets/Avengers.jpeg",
       description:
@@ -24,7 +26,7 @@ function App() {
       rating: 4.5,
     },
     {
-      id: 3,
+      id: Math.floor(Math.random() * 100),
       title: "Halloween",
       posterUrl: "../Assets/Halloween.jpeg",
       description:
@@ -33,7 +35,7 @@ function App() {
     },
 
     {
-      id: 4,
+      id: Math.floor(Math.random() * 100),
       title: "Joker",
       posterUrl: "../Assets/Joker.jpeg",
       description:
@@ -41,7 +43,7 @@ function App() {
       rating: 4,
     },
     {
-      id: 5,
+      id: Math.floor(Math.random() * 100),
       title: "Lion King",
       posterUrl: "../Assets/Lion-King.jpeg",
       description:
@@ -49,7 +51,7 @@ function App() {
       rating: 4.8,
     },
     {
-      id: 6,
+      id: Math.floor(Math.random() * 100),
       title: "Wolverine",
       posterUrl: "../Assets/Wolverine.jpeg",
       description:
@@ -57,7 +59,7 @@ function App() {
       rating: 4.5,
     },
   ]);
-
+  
   const [addMovie, setAddMovie] = useState(false);
 
   const handleChange = () => {
@@ -72,16 +74,21 @@ function App() {
     );
   };
 
-  const handleAdd = (e) => {
-    setMovies([...movies, e]);
+  const handleAdd = (even) => {
+    setMovies((prevMovies) => {
+      return [...prevMovies, even]
+    })
+  setAddMovie(!addMovie)
   };
+ 
+
 
   return (
     <div>
       <Header handleChange={handleChange} handleFilter={handleFilter} />
-      {addMovie ? <AddMovie handleAdd={handleAdd} /> : null}
+      {addMovie && <AddMovie handleAdd={handleAdd} /> }
     
-      <MovieList movies={movies} />
+       <MovieList movies={movies} />
       <Footer /> 
     </div>
   );

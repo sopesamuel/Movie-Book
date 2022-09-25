@@ -1,0 +1,55 @@
+.create {
+    color: azure;
+    max-width: 480px;
+    margin: 10px auto;
+    position:relative;
+    background: #082B4F;
+    height: 92%;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid #215D9A;
+  }
+
+  .page-title{
+   color:azure;
+  }
+
+  .create input {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .create label span {
+   font-size: 15px;
+   font-weight: bolder;
+    display: block;
+    margin: 20px 0 10px;
+  }
+  
+  /* .create p {
+    margin-top: 10px;
+    font-size: 1.8em;
+  } */
+  
+  .create button {
+    display: block;
+    width: 100px;
+    font-size: 1em;
+    font-weight: bolder;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px; 
+    background-color: #215D9A;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px auto;
+  }
+
+  .create button:hover {
+    background: #99a6bec4;
+    color: #fff;
+  }
