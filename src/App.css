@@ -1,0 +1,118 @@
+body{
+  margin: 0;
+  background:  #99a6bec4 ;
+}
+
+.movie-header{
+  background-image: linear-gradient(to right,#07000c ,#267ad3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+ 
+}
+
+.movie-header p{
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.movie-header button{
+    background: none;
+    border: 2px solid #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+.movie-header button:hover {
+    background: #99a6bec4;
+    color: #fff;
+  }
+
+  .movie-header input{
+    border: 2px solid #a1b8aac2;
+    padding: 6px 12px;
+    width: 400px;
+    font-size: 15px;
+    font-weight:550;
+  }
+
+  
+  .movie-grid{
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 40px;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    box-sizing: border-box;
+  }
+
+  .movie-footer{
+    background: #212529; 
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight:lighter;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footer-container{
+    position: relative;
+    min-height: 50vh;
+  }
+
+  @media(max-width: 415px ){
+    
+.movie-header{
+  background-image: linear-gradient(to right,#07000c ,#267ad3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  gap: 15px;
+ 
+}
+.movie-header button{
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.movie-header p{
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.movie-header input{
+  border: 2px solid #a1b8aac2;
+  padding: 6px 12px;
+  margin-top: -40px;
+  width: 350px;
+  font-size: 15px;
+  font-weight:550;
+}
+  }
